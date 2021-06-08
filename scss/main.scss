@@ -1,0 +1,61 @@
+@import "../css/normalize.css";
+body{
+  background-color: #14131A;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  &__logo-link{
+    display: inline-block;
+    margin-right: 50px;
+  }
+  &__logo-image{}
+}
+.nav-menu{
+  &__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  &__item{
+    margin-right: 30px;
+  }
+  &__link{
+    display: inline-block;
+  }
+}
+.film{
+  &__text{}
+  &__text-date{
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 38px;
+  }
+  &__film-logo{
+    margin-bottom: 40px;
+  }
+  &__text-description{
+    max-width: 423px;
+  }
+
+}
