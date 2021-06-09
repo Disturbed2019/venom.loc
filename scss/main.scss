@@ -1,5 +1,6 @@
 @import "../css/normalize.css";
 body{
+
   background-color: #14131A;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -57,5 +58,42 @@ a{
   &__text-description{
     max-width: 423px;
   }
-
+  &__button-items{
+    display: flex;
+    margin-top: 70px;
+  }
+}
+.button{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  &-primary{
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #8D0019;
+    margin-right: 20px;
+  }
+  &-text{
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+  }
+  &-play{}
+  &-link{
+    color: #ffffff;
+  }
+  &-ticket{}
+}
+.venom{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.blood{
+  background: url("../img/blood.png") no-repeat top right, url("../img/bg.png") no-repeat center center / 100%, #14131A;
 }
