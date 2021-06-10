@@ -10,6 +10,7 @@ body{
 }
 ul{
   list-style: none;
+  padding: 0;
 }
 a{
   text-decoration: none;
@@ -96,4 +97,72 @@ a{
 }
 .blood{
   background: url("../img/blood.png") no-repeat top right, url("../img/bg.png") no-repeat center center / 100%, #14131A;
+}
+.about{
+  background: url("../img/bg.png") no-repeat center center / 100%, #14131A;
+  //background-size: cover;
+}
+.col{
+  flex-basis: 50%;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  &__poster{
+    display: flex;
+    justify-content: start;
+  }
+  &__poster-img{
+    border-radius: 10px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  &__description{
+    max-width: 425px;
+    margin-bottom: 30px;
+  }
+  &__sub-title{
+    margin: 0 0 15px 0;
+    font-weight: 700;
+  }
+  &__list-act{
+    max-width: 320px;
+    column-count: 2;
+    margin-bottom: 30px;
+    column-gap: 20px;
+  }
+  &__list-item{
+    line-height: 1.5;
+  }
+  &__trailer{
+    border-radius: 5px;
+    width: 356px;
+    height: 205px;
+    background: url("../img/trailer_preview.jpg") no-repeat center center / contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__play{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  &__play-icon{
+    transform: translate(5%,0);
+
+  }
+  &__creators{
+    margin-left: 30px;
+  }
 }
