@@ -16,8 +16,12 @@ a{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
+img{
+  max-width: 100%;
+}
 .container{
-  max-width: 1140px;
+  //max-width: 1140px;
+  width: 90%;
   margin: auto;
 }
 .header{
@@ -46,22 +50,23 @@ a{
   }
 }
 .film{
-  &__text{}
   &__text-date{
     display: block;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 38px;
+    margin-bottom: 2%;
   }
   &__film-logo{
-    margin-bottom: 40px;
+    width: 70%;
+
   }
   &__text-description{
+    margin-top: 3%;
     max-width: 423px;
   }
   &__button-items{
     display: flex;
-    margin-top: 70px;
+    margin-top: 5%;
   }
 }
 .button{
@@ -94,9 +99,13 @@ a{
   position: absolute;
   right: 0;
   top: 0;
+  max-width: 728px;
+  width: 50%;
+
 }
 .blood{
-  background: url("../img/blood.png") no-repeat top right, url("../img/bg.png") no-repeat center center / 100%, #14131A;
+  background: url("../img/blood.png") no-repeat top right / 70%
+  , url("../img/bg.png") no-repeat center center / 100%, #14131A;
 }
 .about{
   background: url("../img/bg.png") no-repeat center center / 100%, #14131A;
@@ -166,3 +175,12 @@ a{
     margin-left: 30px;
   }
 }
+.menu-btn{
+  display: none;
+  &__close{
+    display: none;
+  }
+}
+
+
+@import "media";
